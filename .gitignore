@@ -1,0 +1,10 @@
+!uploads/.keep
+*.pyc
+*.swp
+*.swo
+*.swn
+activate
+db.sqlite3
+__pycache__
+main/local_settings.py
+uploads/*
