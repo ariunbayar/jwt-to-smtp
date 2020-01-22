@@ -4,6 +4,7 @@ from django.conf.urls.static import static
 
 import secure.views
 import user.views
+import api.views
 
 
 urlpatterns = [
@@ -15,6 +16,8 @@ urlpatterns = [
     path('logout/', secure.views.logout, name='logout'),
 
     path('u/profile/', user.views.profile, name='user-profile'),
+
+    path('api/send-email/', api.views.email_send, name='api-email-send'),
 
 ]
 

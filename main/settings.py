@@ -40,6 +40,8 @@ from .local_settings import (
         EMAIL_FROM,
     )
 
+from .local_settings import JWT
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -54,6 +56,7 @@ INSTALLED_APPS = [
 
     'user.apps.UserConfig',
     'secure.apps.SecureConfig',
+    'api.apps.ApiConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',

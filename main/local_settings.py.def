@@ -55,3 +55,10 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = True
 
 EMAIL_FROM = 'system@example.com'
+
+
+# https://docs.authlib.org/en/latest/jose/jwt.html
+JWT = {
+        'headers': {'alg': 'HS256', 'typ': 'JWT'},
+        'key': '',
+    }
